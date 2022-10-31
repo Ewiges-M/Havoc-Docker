@@ -1,0 +1,33 @@
+Teamserver {
+Host = "0.0.0.0"
+Port = 40056
+
+        Build {
+            Compiler64 = "data/x86_64-w64-mingw32-cross/bin/x86_64-w64-mingw32-gcc"
+            Nasm = "/usr/bin/nasm"
+        }
+
+}
+
+Operators {
+user "secured" {
+Password = "SecureDP@ssw0rd4321"
+}
+}
+
+# this is optional. if you dont use it you can remove it.
+
+Service {
+Endpoint = "service-endpoint"
+Password = "service-password"
+}
+
+Demon {
+Sleep = 2
+
+    Injection {
+        Spawn64 = "C:\\Windows\\System32\\notepad.exe"
+        Spawn32 = "C:\\Windows\\SysWOW64\\notepad.exe"
+    }
+
+}
