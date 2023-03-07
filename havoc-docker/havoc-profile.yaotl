@@ -11,7 +11,7 @@ Port = 40056
 
 Operators {
 user "secured" {
-Password = "SecureDP@ssw0rd4321"
+Password = "<Password>"
 }
 }
 
